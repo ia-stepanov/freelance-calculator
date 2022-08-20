@@ -45,11 +45,11 @@ function сalcEditRate(input) {
   if (amountFixed === 0 || amountFixed === 1) {
     return (amountFixed = 1);
   } else if (amountFixed > 0 && amountFixed % 3 === 1) {
-    return (amountFixed + 2) * 0.5;
+    return ((amountFixed + 2) / 3) * 0.5 + 1;
   } else if (amountFixed % 3 === 2) {
-    return (amountFixed + 1) * 0.5;
+    return ((amountFixed + 1) / 3) * 0.5 + 1;
   } else if (amountFixed % 3 === 0) {
-    return amountFixed * 0.5;
+    return (amountFixed / 3) * 0.5 + 1;
   }
 }
 
