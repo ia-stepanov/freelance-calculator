@@ -1,0 +1,56 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.total-numb,
+.accordion-button,
+.accordion-item {
+  background-color: transparent;
+  border: none;
+}
+
+.accordion-button {
+  padding: 1rem 0;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: transparent;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+
+.fs-1 {
+  font-size: 1.5rem;
+}
+
+.total-numb:focus {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.nav-link,
+.nav-link:focus,
+.nav-link:hover {
+  color: black;
+}
+
+.form-label,
+.f-bold {
+  font-weight: 500;
+}
+
+.mt-2 {
+  margin-top: 2rem !important;
+}
