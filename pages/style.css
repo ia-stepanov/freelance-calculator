@@ -17,6 +17,10 @@ body {
   padding: 1rem 0;
 }
 
+.accordion-item {
+  margin-bottom: 0.5rem;
+}
+
 .accordion-button:not(.collapsed) {
   color: black;
   background-color: transparent;
@@ -53,4 +57,12 @@ body {
 
 .mt-2 {
   margin-top: 2rem !important;
+}
+
+.mt-5 {
+  margin-top: 5rem !important;
+}
+
+.mw-960 {
+  max-width: 960px;
 }
