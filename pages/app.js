@@ -33,7 +33,9 @@ function isValidInput(input) {
     input = 0;
   }
 
-  let numbFmt = input.toLocaleString('ru-RU');
+  let numbFmt = Number.isInteger(input)
+    ? input.toLocaleString('ru-RU')
+    : Math.floor(input).toLocaleString('ru-RU');
 
   return numbFmt;
 }
